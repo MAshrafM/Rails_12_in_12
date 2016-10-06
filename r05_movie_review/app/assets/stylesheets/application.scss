@@ -17,9 +17,12 @@
 @import "bootstrap";
 
 body{
-  background: #afafaf;
+  background: url('bg.jpg');
+  background-size: cover;
 }
-
+.navbar{
+  border-radius: 0;
+}
 .review_title{
   margin: 0 0 20px 0;
 }
