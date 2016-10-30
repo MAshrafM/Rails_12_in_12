@@ -1,5 +1,5 @@
 # Rails 12 in 12
-## Week 02: Recipe Box
+## Week 03: Recipe Box
 
 - Login System Using Devise
 - Simple CRUD for Recipe/Instruction/Ingredients
