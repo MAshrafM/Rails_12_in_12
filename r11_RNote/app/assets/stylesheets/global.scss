@@ -1,6 +1,6 @@
 $dark_gray: #2B2E2E;
- $light_gray: #C0C1C1;
- $green: #33CD99;
+$light_gray: #C0C1C1;
+$green: #33CD99;
  
  @mixin bold_font{
   font-family: "Brandon Grotesque","Helvetica Neue", Helvetica, sans-serif;
@@ -10,6 +10,7 @@ $dark_gray: #2B2E2E;
  
  *{
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
  }
  
  body{
@@ -22,7 +23,45 @@ $dark_gray: #2B2E2E;
   margin: 0 auto;
  }
  
- header{
+ .wrapper_with_padding {
+ 	width: 80%;
+ 	margin: 0 auto;
+ 	padding: 3.5rem 0;
+ }
+ 
+ .clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+ }
+ .clearfix:after {
+  clear: both;
+ }
+ 
+button, .button {
+ 	border: none;
+ 	outline: none;
+ 	background: $green;
+ 	padding: 1rem 3.5rem;
+	border-radius: 2rem;
+ 	a {
+    color: white;
+		text-decoration: none;
+  }
+}
+.button {
+  color: white;
+  margin: 2rem 0;
+}
+
+a{
+  color: $green;
+  text-decoration: none;
+ 	&:hover {
+    color: $dark_gray;
+  }
+}
+ 
+header{
   background: $dark_gray;
   position: fixed;
   top: 0;
@@ -48,15 +87,16 @@ $dark_gray: #2B2E2E;
         color: white;
         font-size: 1.1rem;
         line-height: 1.5;
+        margin-left: 1rem;
         &:hover{
           color: $green;
         }
       }
     }
   }
- }
+}
  
- footer{
+footer{
   background: $dark_gray;
   width: 100%;
   padding: 2rem 0;
@@ -68,4 +108,19 @@ $dark_gray: #2B2E2E;
     margin: 0;
     font-size: .85rem;
   }
+}
+ 
+input[type="text"], input[type="email"], input[type="password"], textarea {
+ 	width: 100%;
+ 	margin-bottom: 1rem;
+ 	border: 1px solid $light_gray;
+ 	border-radius: .4rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+ 	height: 40px;
  }
+ 
+textarea {
+ 	min-height: 200px;
+}
