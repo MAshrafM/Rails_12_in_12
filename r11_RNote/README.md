@@ -7,7 +7,7 @@
 
 
 Final Show Case
-![VIEW](https://github.com/MAshrafM/Rails_12_in_12/blob/master/r11_RNote/show.jpg)
+![VIEW](https://github.com/MAshrafM/Rails_12_in_12/blob/master/r11_RNote/show.png)
 
 ### Future
 - Improve style.
