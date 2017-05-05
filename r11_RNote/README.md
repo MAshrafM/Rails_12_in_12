@@ -1,24 +1,16 @@
-# README
+# Rails 12 in 12
+## Week 11: Rails Note
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Simple CRUD for Note.
+- Using Devise for Login System.
+- Using HAML and Custom CSS.
 
-Things you may want to cover:
 
-* Ruby version
+Final Show Case
+![VIEW](https://github.com/MAshrafM/Rails_12_in_12/blob/master/r11_RNote/show.jpg)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Future
+- Improve style.
+- Add Animation.
+- Add more functions.
+- Add Dashboards.
