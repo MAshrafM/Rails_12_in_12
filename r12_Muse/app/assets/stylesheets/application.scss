@@ -21,4 +21,42 @@ body{
   clear: both;
 }
 
+header{
+  width: 100%;
+  padding: 2rem 0;
+  border-bottom: 1px solid #e4e4e4;
+  
+  #logo{
+    float:left;
+    font-size: 1.75rem;
+    
+    a{
+      color: #332333;
+      text-decoration: none;
+      &:hover{
+        color: #50a7c7;
+      }
+    }
+  }
+  
+  nav{
+    float: right;
+    a{
+      margin: left: 1.5rem;
+      line-height: 2;
+      color: 9b9b9b;
+      text-decoration: none;
+      &:hover{
+        color: #50a7c7;
+      }
+    }
+    
+    .button{
+      border: 1px solid #9b9b9b;
+      padding: .7rem 1.25rem;
+      border-radius: .3rem;
+    }
+  }
+}
+
 @import 'home.css.scss';

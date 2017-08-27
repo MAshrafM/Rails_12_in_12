@@ -30,6 +30,9 @@
       a{
         text-decoration: none;
         color: #333233;
+        &:hover{
+          color: #50a7c7;
+        }
       }
     }
     
