@@ -1,3 +1,17 @@
+- if user_signed_in?
+  %p#intro
+    Hello
+    = current_user.name
+    %br/
+    %span
+      Share your Muse with the World.
+- else
+  %p#intro  
+    What is your Muse?
+    %br/
+    %span
+      Share your Muse with the World. Sign Up Now.
+
 #posts
   - @posts.each do |post|
     .post
