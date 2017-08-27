@@ -7,5 +7,6 @@
     = post.user.name
     
   %p= pluralize(post.comments.count, "Comment")
+  %p= pluralize(post.get_likes.size, "Like")
   
 = link_to "New Muse", new_post_path
