@@ -12,7 +12,7 @@
       .description= @post.description
       
     .post_data
-      = link_to "Visit Link", @post.link
+      = link_to "Visit Link >>", @post.link, class: "button"
       = link_to like_post_path(@post), method: :get, class: "data" do
         %i.fa.fa-thumbs-o-up
         = pluralize(@post.get_upvotes.size, "Like")
@@ -23,11 +23,11 @@
         %i.fa.fa-comments-o
         = pluralize(@post.comments.count, "Comment")
       - if @post.user == current_user
-        = link_to "Edit", edit_post_path(@post)
-        = link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure ?"}
+        = link_to "Edit", edit_post_path(@post), class: "button"
+        = link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Are you sure ?"}, class: "button"
     .random_post
       %h3 Random Muse
-      = link_to(image_tag @random_post.image.url(:medium)), post_path(@random_post))
+      = link_to (image_tag @random_post.image.url(:medium)), post_path(@random_post)
       = @random_post.title
       = @random_post.user.name
 
@@ -36,7 +36,9 @@
   
   - @comments.each do |comment|
     .comment
-      = comment.content
-      = comment.user.name
+      .content
+        = comment.content
+      .username
+        = comment.user.name
   
   = render "comments/form"
