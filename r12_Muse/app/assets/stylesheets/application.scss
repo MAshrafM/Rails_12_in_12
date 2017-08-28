@@ -7,6 +7,9 @@ body{
   font-weight: 100;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-weight: 100;
+}
 .wrapper{
   width: 80%;
   margin: 0 auto;
@@ -19,6 +22,15 @@ body{
 
 .clearfix:after{
   clear: both;
+}
+
+.button{
+  border: 1px solid #9b9b9b;
+  padding: .7rem 1.25rem;
+  border-radius: .3rem;
+  outline: none;
+  background: #fff;
+  color: #9b9b9b;
 }
 
 header{
@@ -50,13 +62,8 @@ header{
         color: #50a7c7;
       }
     }
-    
-    .button{
-      border: 1px solid #9b9b9b;
-      padding: .7rem 1.25rem;
-      border-radius: .3rem;
-    }
   }
 }
 
 @import 'home.css.scss';
+@import "post.css.scss";
