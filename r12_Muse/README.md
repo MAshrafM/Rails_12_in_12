@@ -4,6 +4,8 @@
 - Simple CRUD for Posts and Comments.
 - Using Devise for Login System.
 - Using HAML and Custom CSS.
+- Paperclip to upload images
+- Likes/Dislike using votable
 
 
 Final Show Case
